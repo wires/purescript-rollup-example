@@ -1,0 +1,17 @@
+{
+  "name": "testps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^0.41.6",
+    "rollup-plugin-purs": "^1.0.35",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "build": "rollup --config"
+  }
+}
