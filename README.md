@@ -7,6 +7,9 @@ requirements
 
 then
 
-	psc-package build -- --source-maps
-	npm run build
-	node app.js
+	npm run psc-package-build
+	npm run rollup
+
+then
+
+	cd public; superstatic -p 12373
