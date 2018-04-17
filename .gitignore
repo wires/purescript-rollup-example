@@ -1,0 +1,4 @@
+.psc-package/
+node_modules/
+output/
+public/bundle.js*

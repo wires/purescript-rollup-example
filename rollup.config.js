@@ -3,9 +3,9 @@ import uglify from 'rollup-plugin-uglify';
 
 export default {
   entry: "src/Main.purs",
-  dest: "bundle.js",
+  dest: "public/bundle.js",
   format: "iife",
-  // sourceMap: true,
+  sourceMap: true,
   plugins: [
     purs(),
     uglify()
