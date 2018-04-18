@@ -11,7 +11,7 @@ calc :: String
 calc = show (pow 3.0 4.0)
 
 greet :: String -> String
-greet name = "Hello, " <> name <> "!"
+greet name = "Hello, " <> name <> "!" <> calc
 
 main :: forall e. Eff (console :: CONSOLE | e) Unit
 main = log (greet "World")

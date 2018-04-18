@@ -1,7 +1,9 @@
 "use strict";
 
+const R = require('ramda')
+
 exports.pow = function(x) {
   return function(y) {
-    return Math.pow(x,y);
+    return R.multiply(x,y);
   };
 };

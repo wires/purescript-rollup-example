@@ -8,6 +8,8 @@
   "license": "ISC",
   "devDependencies": {
     "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "8.3.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-purs": "^1.0.35",
     "rollup-plugin-uglify": "^3.0.0"
   },
@@ -15,5 +17,8 @@
     "build": "npm run psc-package-build && npm run rollup",
     "psc-package-build": "psc-package build -- --source-maps",
     "rollup": "rollup --config"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
   }
 }
