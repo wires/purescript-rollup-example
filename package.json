@@ -12,7 +12,8 @@
     "rollup-plugin-uglify": "^3.0.0"
   },
   "scripts": {
-    "purs": "psc-package build -- --source-maps",
+    "build": "npm run psc-package-build && npm run rollup",
+    "psc-package-build": "psc-package build -- --source-maps",
     "rollup": "rollup --config"
   }
 }
